@@ -8,7 +8,7 @@ const app = express();
 //     cert: fs.readFileSync('./cert/cert.pem')
 // };
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send('Hello World! Ts');
 });
 app.get('/graphql', (req, res) => {
     res.send(`<h1>Hello World</h1>`);
