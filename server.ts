@@ -1,12 +1,12 @@
-const express = require('express');
-const fs=require('fs');
-const https = require('https');
-const path = require('path');
+import express  from 'express';
+import fs from 'fs';
+import https from'https';
+import path from 'path';
 const app = express();
-const options = {
-    key: fs.readFileSync('./cert/key.pem'),
-    cert: fs.readFileSync('./cert/cert.pem')
-};
+// const options = {
+//     key: fs.readFileSync('./cert/key.pem'),
+//     cert: fs.readFileSync('./cert/cert.pem')
+// };
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
