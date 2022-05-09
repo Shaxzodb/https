@@ -13,8 +13,11 @@ app.get('/', (req, res) => {
 app.get('/graphql', (req, res) => {
     res.send(`<h1>Hello World</h1>`);
 });
-const HttpsPort=https.createServer( options, app )
+// const HttpsPort=https.createServer( options, app )
 const PORT = process.env.PORT || 8000;
-HttpsPort.listen(PORT, function () {
+// HttpsPort.listen(PORT, function () {
+//     console.log(`Server running at `);
+// });
+app.listen(PORT, function () {
     console.log(`Server running at `);
 });
